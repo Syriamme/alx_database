@@ -2,4 +2,4 @@
 -- first_table from the database hbtn_0c_0 in my MySQL server
 
 
-SELECT * from first_table
+SELECT * FROM first_table
