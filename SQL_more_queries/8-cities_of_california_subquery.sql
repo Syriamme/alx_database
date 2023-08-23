@@ -1,11 +1,10 @@
--- Switching to the required database
+-- listing all the cities of California
 
-
-USE hbtn_0d_usa;
-
-SET @california_id = (SELECT id FROM states WHERE name = 'California');
-
-SELECT cities.*
-FROM cities
-WHERE state_id = @california_id
-ORDER BY cities.id ASC;
+SELECT  id, name
+        FROM cities
+        WHERE state_id =
+        (
+            SELECT id FROM states
+            WHERE name = "California"
+        )
+        ORDER BY id;
