@@ -1,1 +1,1 @@
-SQL - More queries
+More SQL queries
