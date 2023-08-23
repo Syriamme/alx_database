@@ -1,15 +1,17 @@
--- Create database if it doesn't exist
+-- Creating a database
 
-CREATE DATABASE IF NOT EXISTS hbtn_0d_2;
+CREATE DATABASE 
+        IF NOT EXISTS hbtn_0d_2;
 
--- Create user if it doesn't exist
+-- Creating user
 
-CREATE USER IF NOT EXISTS 'user_0d_2'@'localhost' IDENTIFIED BY 'user_0d_2_pwd';
+CREATE USER
+        IF NOT EXISTS 'user_0d_2'@'localhost'
+        IDENTIFIED BY 'user_0d_2_pwd';
 
--- Grant SELECT privilege on hbtn_0d_2 database to user_0d_2
+-- Grant SELECT privilege
 
-GRANT SELECT ON hbtn_0d_2.* TO 'user_0d_2'@'localhost';
-
--- Flush privileges to apply changes
+GRANT SELECT ON hbtn_0d_2.* 
+            TO 'user_0d_2'@'localhost';
 
 FLUSH PRIVILEGES;
